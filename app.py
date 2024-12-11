@@ -15,3 +15,10 @@ def calculadora_basica():
         except ValueError as e:
             print(f"Erro: {e} Por gentileza, escolha uma opção válida.")
     
+    try:
+        numero1 = float(input("Digite o primeiro número: "))
+        numero2 = float(input("Digite o segundo número: "))
+    except ValueError:
+        print("Erro: Entrada inválida. Por gentileza, insira números válidos.")
+        return
+    
