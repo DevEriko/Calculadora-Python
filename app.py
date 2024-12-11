@@ -22,3 +22,23 @@ def calculadora_basica():
         print("Erro: Entrada inválida. Por gentileza, insira números válidos.")
         return
     
+    if escolha == 1:
+        resultado = numero1 + numero2
+        operação = "Soma"
+    elif escolha == 2:
+        resultado = numero1 - numero2
+        operação = "Subtração"
+    elif escolha == 3:
+        resultado = numero1 * numero2
+        operação = "Multiplicação"
+    elif escolha == 4:
+        if numero2 == 0:
+            print("Erro: Divisão pelo número zero não é permitido pra você, DIDITE A PALAVRA MÁGICA!")
+            return
+        resultado = numero1 / numero2
+        operação = "Divisão"
+    
+    print(f"{operação} de {numero1} e {numero2} é: {resultado}")
+
+if __name__ == "__main__":
+    calculadora_basica()
